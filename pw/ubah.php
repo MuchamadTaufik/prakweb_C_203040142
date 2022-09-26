@@ -37,7 +37,7 @@ if (isset($_POST['ubah'])) {
 <body>
   <h3>Form Ubah Data Buku</h3>
   <form action="" method="POST">
-    <input type="hidden" name="id" value="<?= $m['id']; ?>">
+    <input type="hidden" name="id_Buku" value="<?= $m['id_Buku']; ?>">
     <ul>
       <li>
         <label>

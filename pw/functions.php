@@ -53,7 +53,7 @@ function ubah($data)
 {
   $conn = koneksi();
 
-  $id = $data['id'];
+  $id = $data['id_Buku'];
   $judul_Buku = htmlspecialchars($data['judul_Buku']);
   $penerbit = htmlspecialchars($data['penerbit']);
   $pengarang = htmlspecialchars($data['pengarang']);
@@ -66,7 +66,7 @@ function ubah($data)
               pengarang = '$pengarang',
               tahun = '$tahun',
               gambar = '$gambar'
-            WHERE id = $id";
+            WHERE id_Buku = $id";
   mysqli_query($conn, $query) or die(mysqli_error($conn));
   return mysqli_affected_rows($conn);
 }
