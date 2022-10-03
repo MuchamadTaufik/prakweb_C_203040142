@@ -14,21 +14,11 @@ if (isset($_POST['cari'])) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <title>Daftar Buku</title>
 </head>
 
 <body>
-  <style>
-    body{
-      background-color: yellowgreen;
-	    color: black;
-    }
-    h3{
-      font-size: 25px;
-      color: black;
-      text-align: center;
-    }
-  </style>
   <h3>Daftar Buku</h3>
 
   <a href="tambah.php">Tambah Data Buku</a>
