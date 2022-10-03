@@ -21,6 +21,7 @@ if (isset($_POST['cari'])) {
 
 <body>
   <div class="container" align = "center">
+    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
     <h3>Daftar Koleksi Buku</h3>
 
     <a href="tambah.php">Tambah Data Buku</a>
@@ -61,8 +62,9 @@ if (isset($_POST['cari'])) {
           <td><?= $m['tahun']; ?></td>
           <td><img src="img/<?= $m['gambar']; ?>" width="120"></td>
           <td>
-          <i class="large material-icons"><a href="ubah.php?id=<?= $m['id_Buku']; ?>">create</a></i>
-            <i class="large material-icons"><a href="hapus.php?id=<?= $m['id_Buku']; ?>">delete_forever</a></i>
+          <a class="waves-effect waves-light btn-small" a href="ubah.php?id=<?= $m['id_Buku']; ?>">|<i class="material-icons right">create</i>|</a>
+
+          <a class="waves-effect waves-light btn-small" a href="hapus.php?id=<?= $m['id_Buku']; ?>">|<i class="material-icons right">delete_forever</i>|</a>
           </td>
         </tr>
       <?php endforeach; ?>
